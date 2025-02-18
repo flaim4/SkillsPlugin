@@ -1,4 +1,4 @@
 name: Skills
 version: '1.0-SNAPSHOT'
-main: net.flaim.skills.Skills
+main: net.flaim.skillsPlugin.Skills
 api-version: '1.21'

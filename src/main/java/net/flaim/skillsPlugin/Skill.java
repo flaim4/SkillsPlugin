@@ -1,4 +1,4 @@
-package net.flaim.skills;
+package net.flaim.skillsPlugin;
 
 public abstract class Skill {
     private final String name;

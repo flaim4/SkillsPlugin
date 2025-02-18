@@ -1,4 +1,4 @@
-package net.flaim.skills;
+package net.flaim.skillsPlugin;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
