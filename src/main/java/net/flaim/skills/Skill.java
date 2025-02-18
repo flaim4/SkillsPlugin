@@ -23,5 +23,16 @@ public abstract class Skill {
         return this.xp;
     }
 
+    public int getXpToLevelUp() {
+        return level * 100;
+    }
+
+    public void addXp(int amount) {
+        xp +=amount;
+        if (xp >= getXpToLevelUp()) {
+            xp -= getXpToLevelUp();
+            level++;
+        }
+    }
 
 }
