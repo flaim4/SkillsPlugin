@@ -6,25 +6,18 @@ import net.flaim.skillsPlugin.skills.WoodcuttingSkill;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 public class PlayerSkillData {
 
-    private final String playerName;
-    private final Map<String, Skill> skills = new HashMap<>();
+    private final UUID playerUUID;
 
-    public PlayerSkillData(String playerName) {
-        this.playerName = playerName;
-        skills.put("Combat", new CombatSkill());
-        skills.put("Mining", new WoodcuttingSkill());
-        skills.put("Woodcutting", new MiningSkill());
-    }
+    public final CombatSkill Combat = new CombatSkill();
+    public final WoodcuttingSkill woodcuttingSkill = new WoodcuttingSkill();
+    public final MiningSkill miningSkill = new MiningSkill();
 
-    public Skill getSkill(String name) {
-        return skills.get(name);
-    }
-
-    public Map<String, Skill> getSkills() {
-        return skills;
+    public PlayerSkillData(UUID playerUUID) {
+        this.playerUUID = playerUUID;
     }
 
 }
