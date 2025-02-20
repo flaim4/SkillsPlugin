@@ -35,4 +35,11 @@ public abstract class Skill {
         }
     }
 
+    public void setXp(int xp) {
+        this.xp = xp;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
 }
